@@ -1,3 +1,7 @@
+/*
+* Array2D and VTKWriter class
+* Author: Lucas D. Wittwer
+*/
 #include <vector>
 #include <cassert>
 
