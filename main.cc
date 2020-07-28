@@ -268,7 +268,6 @@ int main(int argc, char **argv)
 					}
 				}
 
-				#pragma omp barrier
 				#pragma omp single
 				{
 					swap(p_old, p_new);
@@ -323,8 +322,6 @@ int main(int argc, char **argv)
 						* dt + phi_old(i, j);
 				}
 			}
-
-			#pragma omp barrier
 
 			// reset boundaries to correct boundary conditions
 			#pragma omp for schedule(static)
